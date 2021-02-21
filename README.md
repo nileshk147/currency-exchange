@@ -29,9 +29,9 @@ Express server listening on http://localhost:3009/, in development mode
 ## Running The Frontend
 
 To the application please follow the following step:-
-1). Run the commant 'npm install' to install all the dependency
+1). Run the commant 'npm install' to install all the dependency.
 2). After installing all the dependecy, please run 
    "ng serve" 
-   after the compilation you will be able to run the project on 'http://localhost:4200';
+   after the compilation you will be able to run the project on 'http://localhost:4200'.
 
 
