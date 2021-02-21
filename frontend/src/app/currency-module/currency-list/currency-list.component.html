@@ -1,0 +1,24 @@
+<nav class="navbar navbar-light bg-light">
+    <a class="navbar-brand h5" href="#">
+      Currency Exchange
+    </a>
+  </nav>
+
+<div class="container mt-5">
+    <div class="selector_container" *ngIf="currencyList.length">
+        <select class="form-select form-select-lg mb-3 currency_selector w-25 h5" 
+        aria-label=".form-select-lg example"
+        (change)="baseCurrencyChanged($event)">
+            <option selected value="" disabled>Please select currency</option>
+            <option *ngFor="let currency of currencyList"
+            [value]="currency.currency_base"> 
+              {{currency.currency_name}} ({{currency.currency_base}})
+            </option>
+          </select>
+    </div>
+    <div class="exchange_container mt-5" >
+      <app-loader *ngIf="isLoading && selectedCurrency"></app-loader>
+        <app-exchange-rate [selectedCurrency]="selectedCurrency" [exchangeRate]="exchangeRate" 
+        [responseErrorMessage]="responseErrorMessage" *ngIf="!isLoading" ></app-exchange-rate>
+    </div>
+</div>

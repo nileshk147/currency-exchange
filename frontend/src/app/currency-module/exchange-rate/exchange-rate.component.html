@@ -1,0 +1,21 @@
+<div class="alert" *ngIf="responseErrorMessage">
+{{responseErrorMessage}}
+</div>
+<div *ngIf="!responseErrorMessage && exchangeRate.rates">
+  <table class="table table-dark">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Currency</th>
+          <th scope="col">Exchange Rate</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of exchangeRate.rates | keyvalue; let i=index">
+          <th scope="row">{{i+1}}</th>
+          <td>{{item?.key}}</td>
+          <td>{{item?.value | number:'2.2'}}</td>
+        </tr>
+      </tbody>
+    </table>
+</div>
