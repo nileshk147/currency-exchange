@@ -17,9 +17,9 @@
     "author": "Nilesh kumar rajbhar <nileshk147@gmail.com>",
     "license": "MIT",
     "bugs": {
-        "url": "https://github.com/nileshk147/tent-house-rental/issues"
+        "url": "https://github.com/nileshk147/currency-exchange/issues"
     },
-    "homepage": "https://github.com/nileshk147/tent-house-rental#readme",
+    "homepage": "https://github.com/nileshk147/currency-exchange#readme",
     "scripts": {
         "start": "node --inspect=5858 -r ts-node/register ./src/index.ts",
         "start:watch": "nodemon",
@@ -50,7 +50,7 @@
         "http": "0.0.0",
         "lodash": "^4.17.11",
         "log4js": "^4.0.2",
-        "mongoose": "5.7.5",
+        "mongoose": "^5.9.13",
         "morgan": "^1.9.1",
         "node-gyp": "^3.8.0",
         "nodemailer": "^5.1.1",

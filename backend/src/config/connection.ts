@@ -7,12 +7,14 @@ interface connectOptions {
     reconnectTries: number; // Never stop trying to reconnect
     reconnectInterval: number;
     loggerLevel?: string;
+    useNewUrlParser: boolean;
     useUnifiedTopology: boolean
 }
 const connectOptions: connectOptions = {
     autoReconnect: true,
     reconnectTries: Number.MAX_VALUE,
     reconnectInterval: 1000,
+    useNewUrlParser: true,
     useUnifiedTopology: true
 };
 
